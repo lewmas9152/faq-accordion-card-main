@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+*,::before,::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+    --Very_dark_desaturated_blue: hsl(238, 29%, 16%);
+    --Soft_red: hsl(14, 88%, 65%);
+    --Soft_violet: hsl(273, 75%, 66%);
+    --soft_blue: hsl(240, 73%, 65%);
+}
+
+img {
+    transform: translate(0,45%);
+    width: 15rem;
+    height: 15rem; 
+    margin-bottom: 0;
+    padding-bottom: 0;
+      
+}
+
+h1 {
+  margin-bottom: 3rem;
+  position: relative;
+  margin-top: 7rem;
+}
+
+.hr {
+  color:white;
+  height: 0;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+ 
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size:15px;
+  font-weight: 400;
+  background-color:var(--Soft_violet);
+  margin: 1rem;
+  margin-top: 0;
+  color:var(--Very_dark_desaturated_blue) ;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(white);
+    justify-content: center;
+    text-align: center;
+   
+   
+
+}
+
+.card {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+
+
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  text-align:justify;
+}
+
+.question {
+  display: flex;
+  flex-direction: row;
+  border: 0;
+  background-color:transparent;
+  font-size:inherit;
+  color: inherit;
+  text-align: justify;
+  padding-left: 0;
+}
+
+.active, .question:hover {
+  color: var(--Soft_red);
+}
+
+.answer {
+  display: none;
+  margin-top: 1rem;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+
+.arrow {
+  margin-left: auto;
+  margin-right: 0;
+  margin-top: 0.3rem;
+  /* margin-bottom: 0.5rem; */
+  width: 1rem;
+  height: 0.7rem;
+  transform: rotate(0deg);
+  transition: transform 0.3s ease-in-out;
+}
