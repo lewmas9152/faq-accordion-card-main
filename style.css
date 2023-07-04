@@ -12,13 +12,17 @@
   --Soft_violet: hsl(273, 75%, 66%);
   --soft_blue: hsl(240, 73%, 65%);
 }
+
+html {
+  background: linear-gradient(355deg,var(--soft_blue) 0%, var(--Soft_violet) 120%);
+  background-repeat:no-repeat;
+  background-size:cover;
+}
 body {
   font-family: "Kumbh Sans", sans-serif;
   font-size: 15px;
   font-weight: 400;
-  background-color: var(--Soft_violet);
   margin: 1rem;
-
   color: var(--Very_dark_desaturated_blue);
   display: grid;
   place-items: center;
@@ -56,6 +60,7 @@ h1 {
   justify-content: center;
   text-align: center;
   transform: translate(0, -10%);
+  overflow: hidden;
 }
 
 .card {
@@ -120,7 +125,7 @@ h1 {
 
   .desktop_img {
     display: unset;
-    transform: translate(-5%, 0);
+    transform: translate(-10%, 0);
     height: 17rem;
     width: 20rem;
   }
